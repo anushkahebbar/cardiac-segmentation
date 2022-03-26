@@ -1,1 +1,1 @@
-# cardiac-segmentation
+# Cardiac Segmentation in Chest CT Scan Images
