@@ -1,0 +1,4 @@
+- Rim et al.'s method failed with the initial slices.
+	- The lungs were too small and the trachea was segmented along with the lungs in the lung mask.
+	- The region leftover after the lung mask was subtracted from the convex hull of the lung mask was designated the heart.
+	- Need a way to detect
