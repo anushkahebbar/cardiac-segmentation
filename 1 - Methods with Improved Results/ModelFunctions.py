@@ -37,7 +37,7 @@ def modelPipeline(img_path):
                                                                                   trachea_mask,
                                                                                   showOutput=1)
 
-slices, PatientID = readSortedSlices('../sample-dataset')
+slices, PatientID = readSortedSlices('sample-dataset')
 
 for slicePath in slices:    
     modelPipeline(slicePath)

@@ -28,7 +28,7 @@ def modelPipeline(img_path):
     
     heart_colored, lung_colored, colored_masks = getColoredMasks(im, heart_mask, lung_mask, showOutput=1)
 
-slices, PatientID = readSortedSlices('../sample-dataset')
+slices, PatientID = readSortedSlices('sample-dataset')
 
 for slicePath in slices:    
     modelPipeline(slicePath)
