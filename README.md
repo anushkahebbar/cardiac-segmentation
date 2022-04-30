@@ -2,7 +2,7 @@
 
 
 ### Directory Structure
-- The first folder, `1 - Methods with Improved Results` contains files with code presenting our improved workflow for lung, trachea, spine and heart segmentation. It results in more accurate segmentation of meaningful anatomical structures.
+- The first folder, `1 - Methods with Improved Results` contains files with code presenting our improved workflow for lung, trachea, spine and heart segmentation. It is a complete, original implementation of our work and results in more accurate segmentation of meaningful anatomical structures.
 - The second folder, `2 - KMeans & Morphology Methods - Rim et al.` is a complete, original implementation of the paper by Rim et al., 'Semantic Cardiac Segmentation in Chest CT Images Using K-Means Clustering and the Mathematical Morphology Method'.
 - The third folder, `3 - Statistical Parameter Methods - Larrey-Ruiz et al.` implements the paper by Larrey-Ruiz et al., 'Automatic image-based segmentation of the heart from CT scans', and is heavily derived from the [GitHub repo by @karageorge](https://github.com/karageorge/Automatic-image-based-segmentation-of-the-heart-from-CTs). This was mainly done to explore different techniques of dealing with CT scan images. None of the ideas from the code in this folder are implemented in our original work in folder 1.
 ```
