@@ -1,13 +1,12 @@
 # Semantic Segmentation of Anatomical ROIs in Chest CT Scans
 
-
 ### Directory Structure
 - The first folder, `1 - Methods with Improved Results` contains files with code presenting an improved workflow for lung, trachea, spine and heart segmentation. It is a complete, original implementation of the workflow and results in more accurate segmentation of meaningful anatomical structures.
     - `anatomical_roi_segmentation_model.ipynb`: Contains the workflow and method analysis of the segmentation methodology.
     - `model_pipeline.ipynb`: Runs the entire pipeline for segmentation on all chest CT slices in the dataset.  
 - The second folder, `2 - KMeans & Morphology Methods - Rim et al.` is a complete, original implementation of the paper by Rim et al., 'Semantic Cardiac Segmentation in Chest CT Images Using K-Means Clustering and the Mathematical Morphology Method'.
     - `segmentation_model_on_sample#16_truePositive.ipynb`: Contains the workflow and method analysis of the segmentation methodology. Results in a well segmented image.
-    - `segmentation_model_on_sample#2_falsePositive.ipynb`: Same workflow that run on an initial CT slice and results in a falsely segmented image. 
+    - `segmentation_model_on_sample#2_falsePositive.ipynb`: Same workflow run on an initial CT slice and results in a falsely segmented image. 
     - `model_pipeline.ipynb`: Runs the entire pipeline for segmentation on all chest CT slices in the dataset. 
 - The third folder, `3 - Statistical Parameter Methods - Larrey-Ruiz et al.` implements part of the paper by Larrey-Ruiz et al., 'Automatic image-based segmentation of the heart from CT scans', and is heavily derived from the [GitHub repo by @karageorge](https://github.com/karageorge/Automatic-image-based-segmentation-of-the-heart-from-CTs). This was mainly done to explore different techniques of dealing with CT scan images. None of the ideas from the code in this folder are implemented in our original work in folder 1.
 ```
