@@ -25,6 +25,7 @@
 │   ├── segmentation_model_on_sample#16_truePositive.ipynb
 │   └── segmentation_model_on_sample#2_falsePositive.ipynb
 ├── 3 - Statistical Parameter Methods - Larrey-Ruiz et al.
+│   ├── automatic_region_selection_using_statistical_parameters.ipynb
 │   └── preprocessing_with_hist_params.ipynb
 ├── LICENSE
 ├── pipeline-imgs-report
