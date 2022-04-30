@@ -1,4 +1,13 @@
 # Semantic Segmentation of Anatomical ROIs in Chest CT Scans
+### Reproduce Results
+- To replicate the results of the implementation of the paper by Rim et al., run
+```
+bash model_original.sh
+```
+- To replicate the results of the improved version of the workflow built on top of the paper, run
+```
+bash model_improved.sh
+```
 
 ### Directory Structure
 - The first folder, `1 - Methods with Improved Results` contains files with code presenting an improved workflow for lung, trachea, spine and heart segmentation. It is a complete, original implementation of the workflow and results in more accurate segmentation of meaningful anatomical structures.
