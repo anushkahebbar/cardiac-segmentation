@@ -1,4 +1,4 @@
-import SegmentationFunctions
+from SegmentationFunctions import *
 
 def modelPipeline(img_path):
     
