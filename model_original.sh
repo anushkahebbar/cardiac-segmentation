@@ -1,3 +1,3 @@
 #!bin/bash
 
-python3 1\ -\ Methods\ with\ Improved\ Results/ModelFunctions.py
+python3 2\ -\ KMeans\ \&\ Morphology\ Methods\ -\ Rim\ et\ al/ModelFunctions.py
