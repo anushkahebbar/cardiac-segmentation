@@ -28,28 +28,28 @@ plt.rcParams["figure.figsize"] = (10, 5)
 
 
 def readSortedSlices(path):
-	
-	slices = []
-	for s in os.listdir(path):
-		slices.append(path + '/' + s)	   
-	slices.sort(key = lambda s: int(s[s.find('_') + 1 : s.find('.')]))
-	ID = slices[0][slices[0].find('/') + 1 : slices[0].find('_')]
-	print('CT scan of Patient %s consists of %d slices.' % (ID, len(slices)))  
-	return (slices, ID)
+    
+    slices = []
+    for s in os.listdir(path):
+        slices.append(path[3:] + '/' + s)       
+    slices.sort(key = lambda s: int(s[s.find('_') + 1 : s.find('.')]))
+    ID = slices[0][slices[0].find('/') + 1 : slices[0].find('_')]
+    print('CT scan of Patient %s consists of %d slices.' % (ID, len(slices)))  
+    return (slices, ID)
 
 def getSliceImages(slices):
-	
-	return list(map(readImg, slices))
+    
+    return list(map(readImg, slices))
 
 def readImg(path, showOutput=0):
-	
-	img = cv2.imread(path)
-	img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-	
-	if showOutput:
-		plt.title('A CT Scan Image Slice')
-		plt.imshow(img, cmap='gray')
-	return img
+    
+    img = cv2.imread('../' + path)
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    
+    if showOutput:
+        plt.title('A CT Scan Image Slice')
+        plt.imshow(img, cmap='gray')
+    return img
 	
 def imgKMeans(img, K, showOutput=0, showHistogram=0):
 	'''
